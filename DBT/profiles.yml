@@ -1,0 +1,13 @@
+DBT:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: DSXCLCS-IA83175
+      user: sunilgond
+      password: Jaimatadi@1984
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: PC_DBT_DB
+      schema: PUBLIC
+      threads: 8

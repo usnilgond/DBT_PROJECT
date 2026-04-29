@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: PC_DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: dim_customer
+      - name: fact_sales
+  - name: src
+    database: PC_DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: raw_customers
+      - name: raw_orders
